@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Fill the form with all the correct details",
+        "description": "",
+        "id": "application-form-fill;fill-the-form-with-all-the-correct-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 152263400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I launch the application URL",
+            "match": {
+              "location": "FormFillStepsDefiniton.i_launch_the_application_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5483800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter the details in the form page",
+            "match": {
+              "location": "FormFillStepsDefiniton.i_enter_the_details_in_the_form_page(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Lastname",
+                  "address",
+                  "nationality",
+                  "gender",
+                  "interest"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Divya",
+                  "Pai",
+                  "Address",
+                  "India",
+                  "female",
+                  "cricket"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I submit the form",
+            "match": {
+              "location": "FormFillStepsDefiniton.i_submit_the_form()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242600,
+              "error_message": "java.lang.NullPointerException\r\n\tat utilities.BaseClass.browserShutDown(BaseClass.java:60)\r\n\tat stepDefinition.FormFillStepsDefiniton.an_alert_for_successful_submission_should_be_displayed(FormFillStepsDefiniton.java:61)\r\n\tat ✽.Then an alert for successful submission should be displayed(formFill.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "an alert for successful submission should be displayed",
+            "match": {
+              "location": "FormFillStepsDefiniton.an_alert_for_successful_submission_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Application form fill",
+    "description": "",
+    "id": "application-form-fill",
+    "keyword": "Feature",
+    "uri": "formFill.feature"
+  }
+]
